@@ -1,0 +1,217 @@
+@import "tailwindcss";
+
+/* ====================================================================
+   Y2K / 2010s Web 2.0 / Frutiger Aero Glossy Skeuomorphic Theme
+   ==================================================================== */
+
+@layer utilities {
+  /* 1. Y2K Glossy Gel Orange Button (Signature Action Button) */
+  .btn-y2k-orange {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #ffae19 0%, #ff8000 48%, #e65c00 52%, #ff9500 100%);
+    color: #ffffff;
+    font-weight: 900;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+    border: 1px solid #bf4900;
+    border-bottom: 2px solid #8c3500;
+    box-shadow: 
+      inset 0 1px 0 rgba(255, 255, 255, 0.85),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.25),
+      0 3px 5px rgba(0, 0, 0, 0.25);
+    transition: all 0.12s ease;
+    cursor: pointer;
+    user-select: none;
+  }
+  .btn-y2k-orange:hover {
+    background: linear-gradient(180deg, #ffbd3b 0%, #ff911a 48%, #f06a00 52%, #ffa61a 100%);
+    box-shadow: 
+      inset 0 1px 0 rgba(255, 255, 255, 0.95),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.3),
+      0 4px 8px rgba(255, 128, 0, 0.35);
+    transform: translateY(-1px);
+  }
+  .btn-y2k-orange:active {
+    background: linear-gradient(180deg, #d95500 0%, #bf4900 100%);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #8c3500;
+    transform: translateY(1px);
+  }
+
+  /* 2. Y2K Glossy Aqua / Cyan Blue Button (Classic Mac OS X Aqua & Web 2.0) */
+  .btn-y2k-blue {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #38bdf8 0%, #0284c7 48%, #0369a1 52%, #0284c7 100%);
+    color: #ffffff;
+    font-weight: 900;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    border: 1px solid #075985;
+    border-bottom: 2px solid #0c4a6e;
+    box-shadow: 
+      inset 0 1px 0 rgba(255, 255, 255, 0.8),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.2),
+      0 3px 5px rgba(0, 0, 0, 0.22);
+    transition: all 0.12s ease;
+    cursor: pointer;
+    user-select: none;
+  }
+  .btn-y2k-blue:hover {
+    background: linear-gradient(180deg, #67e8f9 0%, #0ea5e9 48%, #0284c7 52%, #38bdf8 100%);
+    box-shadow: 
+      inset 0 1px 0 rgba(255, 255, 255, 0.95),
+      0 4px 8px rgba(14, 165, 233, 0.35);
+    transform: translateY(-1px);
+  }
+  .btn-y2k-blue:active {
+    background: linear-gradient(180deg, #0369a1 0%, #075985 100%);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+    transform: translateY(1px);
+  }
+
+  /* 3. Y2K Glossy Candy Green Button (Duty Free / Buy) */
+  .btn-y2k-green {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #4ade80 0%, #16a34a 48%, #15803d 52%, #16a34a 100%);
+    color: #ffffff;
+    font-weight: 900;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+    border: 1px solid #166534;
+    border-bottom: 2px solid #14532d;
+    box-shadow: 
+      inset 0 1px 0 rgba(255, 255, 255, 0.8),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.2),
+      0 3px 5px rgba(0, 0, 0, 0.22);
+    transition: all 0.12s ease;
+    cursor: pointer;
+    user-select: none;
+  }
+  .btn-y2k-green:hover {
+    background: linear-gradient(180deg, #86efac 0%, #22c55e 48%, #16a34a 52%, #4ade80 100%);
+    box-shadow: 
+      inset 0 1px 0 rgba(255, 255, 255, 0.95),
+      0 4px 8px rgba(34, 197, 94, 0.35);
+    transform: translateY(-1px);
+  }
+  .btn-y2k-green:active {
+    background: linear-gradient(180deg, #15803d 0%, #166534 100%);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+    transform: translateY(1px);
+  }
+
+  /* 4. Y2K Metallic / Chrome Silver Button */
+  .btn-y2k-silver {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #ffffff 0%, #e2e8f0 48%, #cbd5e1 52%, #f1f5f9 100%);
+    color: #1e293b;
+    font-weight: 900;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+    border: 1px solid #94a3b8;
+    border-bottom: 2px solid #64748b;
+    box-shadow: 
+      inset 0 1px 0 #ffffff,
+      inset 0 -1px 0 rgba(0, 0, 0, 0.15),
+      0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: all 0.12s ease;
+    cursor: pointer;
+    user-select: none;
+  }
+  .btn-y2k-silver:hover {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 48%, #e2e8f0 52%, #ffffff 100%);
+    box-shadow: 
+      inset 0 1px 0 #ffffff,
+      0 3px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+  }
+  .btn-y2k-silver:active {
+    background: linear-gradient(180deg, #cbd5e1 0%, #94a3b8 100%);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(1px);
+  }
+
+  /* 5. Y2K Candy Pink / Magenta Button */
+  .btn-y2k-pink {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #f472b6 0%, #db2777 48%, #be185d 52%, #db2777 100%);
+    color: #ffffff;
+    font-weight: 900;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+    border: 1px solid #9d174d;
+    border-bottom: 2px solid #831843;
+    box-shadow: 
+      inset 0 1px 0 rgba(255, 255, 255, 0.8),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.2),
+      0 3px 5px rgba(0, 0, 0, 0.22);
+    transition: all 0.12s ease;
+    cursor: pointer;
+  }
+
+  /* Y2K Card Glass Specular Sheen (top half glossy reflection) */
+  .glossy-glass-card {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 1rem;
+    box-shadow: 
+      0 10px 25px -5px rgba(0, 0, 0, 0.1),
+      0 8px 10px -6px rgba(0, 0, 0, 0.06),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  }
+  .glossy-glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 45%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    pointer-events: none;
+  }
+
+  /* Y2K Beveled Box (classic 2010s skeuomorphic inset) */
+  .y2k-inset-box {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Y2K Shiny Starburst Badge */
+  .y2k-starburst {
+    background: linear-gradient(135deg, #facc15 0%, #ea580c 100%);
+    box-shadow: 
+      inset 0 1px 0 rgba(255, 255, 255, 0.7),
+      0 2px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Y2K Shiny Credit Card (Irvan VISA & AMEX) */
+  .y2k-credit-card {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+      0 4px 10px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  }
+  .y2k-credit-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(105deg, transparent 40%, rgba(255, 255, 255, 0.4) 45%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.4) 55%, transparent 60%);
+    pointer-events: none;
+  }
+}

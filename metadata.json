@@ -1,0 +1,6 @@
+{
+  "name": "Irvan Manurung Travel - Korea Tour & Duty Free",
+  "description": "이르반 마누룽과 함께 떠나는 대한민국 24시간 썸머 비치 투어, 티켓 예매, 한국 여행 지도, 400 코인 면세점 스토어 및 실시간 AI 여행 가이드",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
